@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Driva">
+    <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5fe3c4"/>
+            <stop offset="1" stop-color="#00876c"/>
+        </linearGradient>
+    </defs>
+    <rect width="64" height="64" rx="16" fill="url(#g)"/>
+    <path d="M21 15h12.5c11.2 0 18.5 6.9 18.5 17s-7.3 17-18.5 17H21V15zm11.8 26.4c6.3 0 10.3-3.6 10.3-9.4s-4-9.4-10.3-9.4h-3.2v18.8h3.2z" fill="#04120e"/>
+</svg>

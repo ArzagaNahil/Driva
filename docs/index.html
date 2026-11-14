@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Driva — Higiene digital para Android</title>
+
+    <meta name="description" content="Driva es una app Android de higiene digital: mide la salud real de tu batería y almacenamiento y te guía para liberar espacio sin promesas falsas. En desarrollo." data-i18n-attr="content" data-i18n-key="meta_desc" />
+    <meta name="author" content="Arzaga Nahil" />
+    <meta name="theme-color" content="#00B894" />
+
+    <meta property="og:title" content="Driva — Higiene digital para Android" data-i18n-attr="content" data-i18n-key="meta_title" />
+    <meta property="og:description" content="App Android de higiene digital: batería, almacenamiento y limpieza guiada. Sin promesas mágicas. En desarrollo." data-i18n-attr="content" data-i18n-key="meta_desc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arzaganahil.github.io/Driva/" />
+    <meta property="og:image" content="https://arzaganahil.github.io/Driva/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Driva — app Android de higiene digital" />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://arzaganahil.github.io/Driva/og-image.png" />
+
+    <link rel="canonical" href="https://arzaganahil.github.io/Driva/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>document.documentElement.className = "js";</script>
+</head>
+<body>
+    <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+    <header class="nav">
+        <a class="brand" href="#top" aria-label="Driva, inicio">
+            <span class="brand__mark" aria-hidden="true">D</span>
+            <span class="brand__name">Driva</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+            <a href="#features" data-i18n="nav_features">Funciones</a>
+            <a href="#how" data-i18n="nav_how">Cómo funciona</a>
+            <a href="#status" data-i18n="nav_status">Estado</a>
+            <button type="button" class="lang" data-lang-toggle aria-label="Switch to English">EN</button>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero__glow" aria-hidden="true"></div>
+
+            <div class="hero__copy">
+                <p class="badge">
+                    <span class="badge__dot" aria-hidden="true"></span>
+                    <span data-i18n="badge">En desarrollo · Android</span>
+                </p>
+
+                <h1>Driva</h1>
+                <p class="tagline" data-i18n="tagline">Higiene digital, sin humo.</p>
+
+                <p class="lead" data-i18n="lead">
+                    Una app Android que mide el estado real de tu batería y tu almacenamiento,
+                    te guía para liberar espacio app por app y registra cuánto has recuperado
+                    de verdad. Sin promesas mágicas de velocidad.
+                </p>
+
+                <ul class="points">
+                    <li data-i18n="point1">Datos del propio dispositivo, no estimaciones</li>
+                    <li data-i18n="point2">Limpieza guiada, paso a paso</li>
+                    <li data-i18n="point3">Historial de lo que liberas</li>
+                </ul>
+
+                <div class="actions">
+                    <a class="btn btn--primary" href="#features" data-i18n="cta_features">Ver funciones</a>
+                    <a class="btn btn--ghost" href="#status" data-i18n="cta_status">Estado del proyecto</a>
+                </div>
+
+                <p class="micro" data-i18n="micro">
+                    MVP validado en emulador y en un Redmi Note 13 Pro 5G. Todavía no está en Google Play.
+                </p>
+            </div>
+
+            <div class="hero__visual" aria-hidden="true">
+                <div class="phone">
+                    <div class="phone__screen">
+                        <div class="phone__status">
+                            <span>9:41</span>
+                            <span class="phone__status-icons"><i></i><i></i><i></i></span>
+                        </div>
+
+                        <div class="phone__head">
+                            <div>
+                                <p class="phone__title">Driva</p>
+                                <p class="phone__sub" data-i18n="phone_sub">Higiene digital</p>
+                            </div>
+                            <span class="phone__avatar" aria-hidden="true">N</span>
+                        </div>
+
+                        <div class="phone__card phone__card--battery">
+                            <div class="phone__card-top">
+                                <span class="phone__label" data-i18n="phone_battery">Batería</span>
+                                <span class="chip chip--ok" data-i18n="phone_health">Saludable</span>
+                            </div>
+                            <div class="phone__battery-row">
+                                <div class="ring" style="--p:86">
+                                    <span>86<small>%</small></span>
+                                </div>
+                                <div class="phone__battery-meta">
+                                    <p><strong>32,4 °C</strong></p>
+                                    <p data-i18n="phone_temp">Temperatura</p>
+                                    <p><strong>4 200 mAh</strong></p>
+                                    <p data-i18n="phone_capacity">Capacidad</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone__card">
+                            <div class="phone__card-top">
+                                <span class="phone__label" data-i18n="phone_storage">Almacenamiento</span>
+                                <span class="phone__value">84,3 GB</span>
+                            </div>
+                            <div class="bar"><span style="width:66%"></span></div>
+                            <p class="phone__hint" data-i18n="phone_free">43,7 GB libres de 128 GB</p>
+                        </div>
+
+                        <div class="phone__list-head">
+                            <span data-i18n="phone_favs">Tus favoritas</span>
+                            <span class="phone__link" data-i18n="phone_all">Ver todas</span>
+                        </div>
+
+                        <ul class="phone__apps">
+                            <li>
+                                <span class="app-dot" style="--c:#25D366">W</span>
+                                <span class="app-name">WhatsApp<em data-i18n="phone_freed_1">120 MB liberados</em></span>
+                                <span class="app-star">★</span>
+                            </li>
+                            <li>
+                                <span class="app-dot" style="--c:#E1306C">I</span>
+                                <span class="app-name">Instagram<em data-i18n="phone_freed_2">480 MB liberados</em></span>
+                                <span class="app-star">★</span>
+                            </li>
+                            <li>
+                                <span class="app-dot" style="--c:#1A73E8">C</span>
+                                <span class="app-name">Chrome<em data-i18n="phone_freed_3">1,2 GB liberados</em></span>
+                                <span class="app-star app-star--off">☆</span>
+                            </li>
+                        </ul>
+
+                        <div class="phone__nav" aria-hidden="true">
+                            <span class="is-on"></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__halo" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <header class="section__head">
+                <p class="eyebrow" data-i18n="features_eyebrow">Funciones del MVP</p>
+                <h2 data-i18n="features_title">Lo que Driva mide, y lo que no</h2>
+                <p class="section__lead" data-i18n="features_lead">
+                    Cuatro funciones construidas sobre las APIs reales de Android. Nada de
+                    animaciones que «aceleran» el teléfono.
+                </p>
+            </header>
+
+            <div class="grid">
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="3"/><path d="M21 11v2"/><path d="M6 12h3l1.5-2.5L13 14l1.5-2H18"/></svg>
+                    </span>
+                    <h3 data-i18n="f1_title">Salud de la batería</h3>
+                    <p data-i18n="f1_text">Nivel, estado de carga y temperatura leídos del sistema. Sin cifras inventadas ni «reparaciones» imposibles.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="3"/><path d="M5 5.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/><path d="M5 11.5v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+                    </span>
+                    <h3 data-i18n="f2_title">Almacenamiento real</h3>
+                    <p data-i18n="f2_text">Ocupado y libre del dispositivo, con las apps que más espacio consumen para que sepas dónde mirar primero.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9l-2.5-2.5"/><path d="M20 17h-9l2.5 2.5"/><path d="M16 7h4"/><path d="M8 17H4"/></svg>
+                    </span>
+                    <h3 data-i18n="f3_title">Limpieza guiada</h3>
+                    <p data-i18n="f3_text">Android no deja que una app borre la caché de otra. Driva te lleva a los Ajustes de cada app y te pregunta cuánto liberaste.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l2.5 2.5"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+                    </span>
+                    <h3 data-i18n="f4_title">Historial y favoritas</h3>
+                    <p data-i18n="f4_text">Cada limpieza queda registrada por app y fecha, con un total por periodo. Tus apps de siempre, siempre arriba.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--split" id="how">
+            <div class="section__head section__head--left">
+                <p class="eyebrow" data-i18n="how_eyebrow">Cómo funciona</p>
+                <h2 data-i18n="how_title">Tres pasos, dos de ellos tuyos</h2>
+                <p class="section__lead" data-i18n="how_lead">
+                    La limitación de Android no se puede esquivar con código: se convierte
+                    en una experiencia clara.
+                </p>
+            </div>
+
+            <ol class="steps">
+                <li>
+                    <span class="steps__num">01</span>
+                    <div>
+                        <h3 data-i18n="s1_title">Elige la app</h3>
+                        <p data-i18n="s1_text">Primero tus favoritas, después las recientes y, si hace falta, las 187 apps con icono del teléfono.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="steps__num">02</span>
+                    <div>
+                        <h3 data-i18n="s2_title">Limpia en Ajustes</h3>
+                        <p data-i18n="s2_text">Driva abre la pantalla de almacenamiento de esa app en Android. Tú pulsas «Borrar caché».</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="steps__num">03</span>
+                    <div>
+                        <h3 data-i18n="s3_title">Registra lo liberado</h3>
+                        <p data-i18n="s3_text">Al volver, anota los MB con botones rápidos (10, 50, 100, 200, 500). El historial se actualiza solo.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="honesty">
+            <div class="honesty__inner">
+                <p class="eyebrow" data-i18n="honest_eyebrow">Transparencia</p>
+                <h2 data-i18n="honest_title">Prefiere decirte la verdad</h2>
+                <p data-i18n="honest_text">
+                    Desde Android 11, y de forma definitiva en Android 16, el sistema bloquea
+                    que una app de terceros lea o borre la caché de otras apps. Lo comprobamos
+                    en un dispositivo real con ADB: <em>Permission denied</em>. Driva no simula
+                    una limpieza que el sistema prohíbe; mide lo que sí puede y convierte el
+                    resto en un flujo guiado.
+                </p>
+                <dl class="facts">
+                    <div><dt data-i18n="fact1_k">APK debug</dt><dd data-i18n="fact1_v">Compilada e instalada</dd></div>
+                    <div><dt data-i18n="fact2_k">Pruebas</dt><dd data-i18n="fact2_v">Emulador + teléfono real</dd></div>
+                    <div><dt data-i18n="fact3_k">Apps detectadas</dt><dd data-i18n="fact3_v">187 con icono</dd></div>
+                    <div><dt data-i18n="fact4_k">Publicación</dt><dd data-i18n="fact4_v">Pendiente</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section" id="status">
+            <header class="section__head">
+                <p class="eyebrow" data-i18n="status_eyebrow">Estado del proyecto</p>
+                <h2 data-i18n="status_title">Fase 1 completada</h2>
+                <p class="section__lead" data-i18n="status_lead">
+                    El MVP funciona y está probado. Lo que queda es monetización y escalado.
+                </p>
+            </header>
+
+            <ol class="phases">
+                <li class="phase is-done">
+                    <div class="phase__head">
+                        <span class="phase__name" data-i18n="p0_title">Fase 0 · Validación</span>
+                        <span class="tag tag--done" data-i18n="tag_done">Completada</span>
+                    </div>
+                    <p data-i18n="p0_text">Marca, stack técnico y alcance del MVP definidos.</p>
+                </li>
+                <li class="phase is-done">
+                    <div class="phase__head">
+                        <span class="phase__name" data-i18n="p1_title">Fase 1 · MVP</span>
+                        <span class="tag tag--done" data-i18n="tag_done">Completada</span>
+                    </div>
+                    <p data-i18n="p1_text">Method Channels en Kotlin, batería, almacenamiento y limpieza guiada. APK debug validada en un Redmi Note 13 Pro 5G con Android 16.</p>
+                </li>
+                <li class="phase is-active">
+                    <div class="phase__head">
+                        <span class="phase__name" data-i18n="p2_title">Fase 2 · Monetización</span>
+                        <span class="tag tag--active" data-i18n="tag_active">En curso</span>
+                    </div>
+                    <p data-i18n="p2_text">Modelo freemium con límite diario, versión Pro y suscripción.</p>
+                </li>
+                <li class="phase">
+                    <div class="phase__head">
+                        <span class="phase__name" data-i18n="p3_title">Fase 3 · Escalado</span>
+                        <span class="tag" data-i18n="tag_pending">Pendiente</span>
+                    </div>
+                    <p data-i18n="p3_text">Mantenimiento programado, control de datos móviles y publicación en tiendas.</p>
+                </li>
+            </ol>
+
+            <div class="stack">
+                <span class="stack__label" data-i18n="stack_label">Stack</span>
+                <ul>
+                    <li>Flutter</li>
+                    <li>Kotlin</li>
+                    <li>Method Channels</li>
+                    <li>Riverpod</li>
+                    <li>Material 3</li>
+                </ul>
+            </div>
+
+            <p class="notice" data-i18n="notice">
+                Driva todavía no está disponible en Google Play. Cuando exista ficha, se
+                enlazará desde aquí y desde la tarjeta del portfolio.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <span class="brand__mark" aria-hidden="true">D</span>
+            <div>
+                <p class="footer__name">Driva</p>
+                <p class="footer__by" data-i18n="footer_by">Un proyecto de Arzaga Nahil</p>
+            </div>
+        </div>
+
+        <nav class="footer__links" aria-label="Enlaces del proyecto">
+            <a href="https://arzaganahil.github.io/Portfolio/development.html" data-i18n="footer_portfolio">Portfolio</a>
+            <a href="https://github.com/ArzagaNahil/Driva">GitHub</a>
+            <a href="https://arzaganahil.github.io/Portfolio/contact.html" data-i18n="footer_contact">Contacto</a>
+        </nav>
+
+        <p class="footer__legal">© <span data-year>2026</span> Arzaga Nahil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
